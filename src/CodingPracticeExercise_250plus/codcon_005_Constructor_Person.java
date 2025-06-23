@@ -12,14 +12,14 @@ public class codcon_005_Constructor_Person {
         Person1 P2 = new Person1("Ananya" ,"XYZ");
         P2.printDetails();
 
-        Person1 P3 = new Person1("Rohan", 4 , 47247357);
+        Person1 P3 = new Person1("Rohan", (byte)4 , 47247357);
         P3.printDetails();
     }
 }
 
 class Person1{
     String Name;
-    int Age;
+    byte Age;
     String Address;
     int Phone;
     Boolean is_Male;
@@ -29,7 +29,7 @@ class Person1{
         Name = "Default";
     }
     //Parameterised Constructor
-    Person1(String name, int age,int phone){
+    Person1(String name, byte age,int phone){
 
         Name = name ;
         Age = age;
